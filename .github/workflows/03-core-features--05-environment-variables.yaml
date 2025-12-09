@@ -10,7 +10,7 @@ jobs:
     env:
       JOB_VAR: "I am job1 scoped"
     outputs:
-      job: ${{ steps.step1.outputs.job-var }}
+      job: ${{ steps.step1.outputs.JOB_VAR }}
     steps:
       - name: Inspect scopes job 1 step 1
         id: step1
