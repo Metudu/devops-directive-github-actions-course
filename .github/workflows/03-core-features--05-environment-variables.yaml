@@ -20,7 +20,7 @@ jobs:
           echo "WORKFLOW_VAR: $WORKFLOW_VAR"   # visible
           echo "JOB_VAR:      $JOB_VAR"        # visible
           echo "STEP_VAR:     $STEP_VAR"       # visible only here
-          cat "$JOB_VAR" >> "$GITHUB_OUTPUT"
+          echo "$JOB_VAR" >> "$GITHUB_OUTPUT"
 
       - name: Inspect scopes job 1 step 2
         run: |
